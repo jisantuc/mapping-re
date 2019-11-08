@@ -25,19 +25,13 @@ let makeContainer = text => {
   let () = document##body##appendChild(container);
 
   content;
-}
+};
 
 let appContainer = document##createElement("div");
 let () = appContainer##setAttribute("class", "app");
 let () = document##body##appendChild(appContainer);
 
 ReactDOMRe.render(
-  <>
-  <NavBar/>
-  <MainContent>
-    <SideBar />
-    <MapContent />
-  </MainContent>
-  </>,
-  appContainer
+  <> <NavBar /> <MainContent> <SideBar /> <MapContent /> </MainContent> </>,
+  appContainer,
 );

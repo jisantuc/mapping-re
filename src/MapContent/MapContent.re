@@ -1,5 +1,9 @@
+
 [@react.component]
 let make = () => {
+  let center = ((-75.1652), 39.9526);
+  let zoom = 13;
+
   <div
     style={ReactDOMRe.Style.make(
       ~background="burlywood",
@@ -7,6 +11,6 @@ let make = () => {
       ~flexShrink="0",
       (),
     )}>
-    {React.string("MAP GOES HERE")}
+    <Map position={center} zoom={zoom} />
   </div>;
 };
