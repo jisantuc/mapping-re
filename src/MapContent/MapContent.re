@@ -11,6 +11,6 @@ let make = () => {
       ~flexShrink="0",
       (),
     )}>
-    <Map position={center} zoom={zoom} />
+    <Map latitude={39.9526} longitude={-75.1652} />
   </div>;
 };
