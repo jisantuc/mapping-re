@@ -32,6 +32,6 @@ let () = appContainer##setAttribute("class", "app");
 let () = document##body##appendChild(appContainer);
 
 ReactDOMRe.render(
-  <> <NavBar /> <MainContent> <SideBar /> <MapContent /> </MainContent> </>,
+  <> <NavBar /> <MainContent> <SideBar /> </MainContent> </>,
   appContainer,
 );
